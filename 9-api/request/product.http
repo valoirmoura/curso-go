@@ -1,0 +1,23 @@
+PUT http://localhost:8000/products/7bea0b07-46d7-48d7-8af8-6125ef48dcf0
+Content-Type: application/json
+
+{
+  "name" : "Geladeira",
+  "price" : 10000.00
+}
+
+###
+GET http://localhost:8000/products/7bea0b07-46d7-48d7-8af8-6125ef48dcf0
+Accept: application/json
+
+###
+POST http://localhost:8000/products
+Content-Type: application/json
+
+{
+  "name" : "Notebook",
+  "price" : 2000.00
+}
+
+###
+
