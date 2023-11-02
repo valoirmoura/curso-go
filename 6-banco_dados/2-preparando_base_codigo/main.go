@@ -124,7 +124,6 @@ func selectAllProducts(db *sql.DB) ([]Product, error) {
 	defer rows.Close()
 
 	var products []Product
-
 	for rows.Next() {
 		var p Product
 		err = rows.Scan(&p.ID, &p.Name, &p.Price)

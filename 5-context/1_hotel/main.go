@@ -11,7 +11,8 @@ func main() {
 	//Contexto em Branco
 	ctx := context.Background()
 
-	//com o WithCancel eu posso cancelar esse contexto sempre que chamar a função cancel()
+	//com o WithCancel eu posso cancelar esse contexto sem
+	//pre que chamar a função cancel()
 	ctx, cancel := context.WithTimeout(ctx, time.Second*6)
 	defer cancel()
 	bookHotel(ctx)
